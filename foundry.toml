@@ -12,4 +12,8 @@ fs_permissions = [
     { access = "read", path = "./broadcast" },
     { access = "read", path = "./reports" },
 ]
+[profile.ci]
+sizes = true
+ignored_contracts = ["VRFCoordinatorV2_5Mock"]
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
