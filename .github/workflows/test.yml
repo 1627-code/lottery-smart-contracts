@@ -8,6 +8,9 @@ on:
 env:
   FOUNDRY_PROFILE: ci
 
+- name: Build Foundry Contracts (ignore mocks)
+  run: forge build --sizes --skip test,mock
+
 jobs:
   check:
     name: Foundry project
